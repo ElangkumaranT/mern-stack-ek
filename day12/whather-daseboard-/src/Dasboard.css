@@ -1,0 +1,29 @@
+h1{
+    color: blue;
+}
+.total
+        {
+         border-style: solid;
+            max-width: fit-content;       
+            border-radius: 10px;
+            padding: 20px; 
+         background-color: rgb(112, 112, 116);
+            border-color: white;
+        }
+        input
+        {
+            padding: 5%;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        input:hover
+                {
+                    background-color:rgb(121, 168, 212);
+                }
+                .total:hover
+                {
+                    padding: 30px;
+                }
+                h2{
+                    color: brown;
+                }
