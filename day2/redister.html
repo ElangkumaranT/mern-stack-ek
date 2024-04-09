@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="materialize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .total
+        {
+         border-style: solid;
+            max-width: fit-content;       
+            border-radius: 10px;
+            padding: 20px; 
+         background-color: rgb(112, 112, 116);
+            border-color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+  <center> <section class="total">
+    <h1>Register Form</h1>
+    <form class="forms">
+        <label>User ID</label>
+        <input type="number" placeholder="ID Of User" id="id" value=""><br>
+        <label>Name</label>
+        <input type="text" placeholder="Name of the User" id="name" value=""><br>
+        
+        <label>Email</label>
+        <input type="email" placeholder="Email Id" id="mail" value=""><br>
+        <label>Password</label>
+        <input type="password" placeholder="Password" id="pass" value=""><br>
+        <textarea placeholder="address" id="address" rows="5" cols="5" ></textarea>
+        <button onclick="clear()">Submit</button>
+
+    </form>
+    </section>
+
+</body>
+</html>

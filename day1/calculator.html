@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total
+        {
+            border-style: solid;
+            max-width: fit-content;       
+            border-radius: 10px;
+            padding: 20px; 
+         background-color: rgb(112, 112, 116);
+            border-color: white;
+        }
+        .total:hover
+        {
+            padding: 30px;
+        }
+        #texte
+        {
+            padding: 5%;
+        }
+        #texte:hover{
+            background-color: rgb(210, 165, 216);
+        }
+        input
+        {
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: 5px;
+
+
+        }
+      input:hover
+        {
+            background-color:rgb(121, 168, 212);
+        }
+        
+       
+    </style>
+</head>
+<body style="background-color:rgb(212, 170, 115); margin-top: 50px;">
+    <center> <section class="total">
+ <h1 style="font-size: 30px; color: yellow"> Calculator</h1>
+    <form id="form">
+        <div class="input">
+        <input type="text" value="" id="texte" name="text">
+        </div>
+       
+        <div class="inpute">
+        <br>
+       <input type="button" name="one" value="1" onclick="form.text.value+='1'">
+       <input type="button" name="two" value="2" onclick="form.text.value+='2'">
+       <input type="button" name="three" value="3" onclick="form.text.value+='3'">
+       <input style="background-color: chartreuse;" type="button" name="+" value="+" onclick="form.text.value+='+'">
+       <br>
+       <input type="button" name="four" value="4" onclick="form.text.value+='4'">
+       <input type="button" name="five" value="5" onclick="form.text.value+='5'">
+       <input type="button" name="six" value="6" onclick="form.text.value+='6'">
+       <input style="background-color: chartreuse;" type="button" name="-" value="-" onclick="form.text.value+='-'">
+       <br>
+       <input type="button" name="seven" value="7" onclick="form.text.value+='7'">
+       <input type="button" name="eight" value="8" onclick="form.text.value+='8'">
+       <input type="button" name="nine" value="9" onclick="form.text.value+='9'">
+       <input style="background-color: chartreuse;" type="button" name="*" value="*" onclick="form.text.value+='*'">
+       <br>
+       <input style="background-color: rgb(255, 81, 0);" type="button" name="clear" value="C" onclick="form.text.value=''">
+       <input type="button" name="zero" value="0" onclick="form.text.value+='0'">
+       <input type="button" name="one" value="=" onclick="form.text.value=eval(form.text.value)">
+       <input style="background-color: chartreuse;" type="button" name="/" value="/" onclick="form.text.value+='/'">  
+        </div>     
+
+    </form>
+  </section>
+</body>
+</html>
